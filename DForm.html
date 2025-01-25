@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+
+        }
+
+        .form {
+            margin-left: 10px;
+            /* border:2px solid black; */
+            min-width: 344px;
+            /* text-align: center; */
+
+        }
+
+        h2 {
+            text-align: center;
+            /* text-decoration: underline;
+        text-decoration-color:red ;
+        text-decoration-thickness:10px;
+    } */
+
+        }
+
+        .date {
+            margin-top: 20px;
+            padding: 10px 0 20px;
+        }
+
+        .date2 {
+            margin-left: 45px;
+        }
+
+        .time2 {
+            margin-left: 40px;
+        }
+
+        .name {
+            margin: 20px 0;
+        }
+
+        .name2 {
+            margin-left: 115px;
+        }
+
+        .last {
+            margin-left: 20px;
+        }
+
+        .gender {
+            margin-top: 20px;
+        }
+
+        .label {
+            margin-left: 88px;
+        }
+
+        .phone {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .phone2 {
+            margin-left: 110px;
+        }
+
+        .city {
+            margin-left: 95px;
+        }
+
+        .state {
+            margin-left: 20px;
+        }
+
+        .area {
+            margin: 20px 0 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .area2 {
+
+            margin-left: 75px;
+        }
+
+        .type {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .check {
+            margin-left: 137px;
+        }
+
+        .button {
+            margin-left: 137px;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        .button:hover {
+            background-color: bisque;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="/doctor.jpg" alt="doctor">
+    </div>
+    <form action="post">
+        <div class="form">
+            <h2> Doctor Appoinment Form</h2>
+            <hr style="border-color:red">
+
+            <div class="date">
+                <label for="date">Appoinment Date</label>
+                <input class="date2" type="date" id="date" required>
+            </div>
+
+            <div class="time">
+                <label for="time"> Appoinment Time</label>
+                <input class="time2" type="time" id="time">
+            </div>
+
+            <div class="name">
+                <label for="name">Name</label>
+                <input class="name2" type="text" placeholder="First" id="name">
+                <input class="last" type="text" placeholder="Last" id="name">
+            </div>
+            <div class="gender">
+                Gender &nbsp; &nbsp;
+                <label class="label" for="101">Male</label>
+                <input type="radio" name="gender" value="male" id="101">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <div class="phone">
+                <label for="phone">Phone</label>
+                <input class="phone2" type="number" placeholder="# # # # #" id="phone">
+            </div>
+            <div>
+                Address
+                <label for="city"></label>
+                <input class="city" type="text" name="city" id="city">
+                <label for="state"></label>
+                <input class="state" type="text" name="state" id="state">
+            </div>
+            <div class="area">
+
+                Your query
+                <textarea class="area2"></textarea>
+            </div>
+            <div class="type">
+                <label for="type">Appoinment type</label>
+                &nbsp; &nbsp; &nbsp&nbsp; Select which Appoinmet type(s) you require
+                <div class="check">
+                    <input type="checkbox">Cervix checkup<br>
+                    <input type="checkbox">Heart checkup<br>
+                    <input type="checkbox">eye - checkup<br>
+                    <input type="checkbox">Hearing test<br>
+                </div>
+            </div>
+            <button class="button">Send</button>
+        </div>
+    </form>
+</body>
+</body>
+
+</html>
