@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="survey"> Survey Form</div>
+        <div class="content">
+          <p>Feel Free To Answer The Questions Below On Your Experience And Option. If You are Not Convenient In Answer A Particular Question 
+             <br> Please Skip It By Answering "No", Every Answer would Be Very Appreciated. Thank You For Your Time.</p>
+        </div>
+    
+            <form action="post">
+                <div class="flex">
+                    <div class="box1">
+                    <div>
+                    <label for="name"> Your Name</label><br>
+                <input type="text" id="name" placeholder="Enter Your name">
+                </div>
+                <div>
+                <label for="email">Your Email Address</label><br>
+                <input type="text" id="name" placeholder="user@gmail.com">
+                </div>
+                <div>
+                <label for="number">Your Phone number</label><br>
+                <input type="number" id="number" placeholder="0000000000">
+            </div>
+            <div class="live">
+                Where Do You Live?<br>
+                <select>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hisar">Hisar</option>
+                    <option value="Panipat">Panipat</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                </select>
+            </div>
+
+           
+            <div class="age">
+                <fieldset>
+                    <legend>Age:</legend>
+                
+                <input type="radio" id="age1" name="choose">
+                <label for="age1">18-20</label><br>
+                
+                <input type="radio" id="age2" name="choose">
+                <label for="age2">21-0</label><br>
+
+                <input type="radio" id="age3" name="choose">
+                <label for="age3">31-40</label><br>
+
+                <input type="radio" id="age4" name="choose">
+                <label for="age4">41-50</label><br>
+
+                <input type="radio" id="age5" name="choose">
+                <label for="age4">Prefer not to say</label><br>
+</fieldset>
+            </div>
+            <div class="pro">How would you rate your proficiency in coding
+                <br>
+                <input class="radio" type="radio" id="1"name="mark" value="beginner">
+                <label for="1">Beginner</label><br>
+              
+                <input class="radio" type="radio" id="2"name="mark" value="Intermediate">
+                <label for="2">Intermediate</label><br>
+              
+                <input class="radio" type="radio" name="mark" id="3" value="Advance">
+                <label for="3">Advance</label><br>
+                </div>
+            </div>
+                <div class="box2">
+                 Have your ever appeared in coding contest<br>
+<input type="radio" name="choice" class="radio" id="4" value="yes">
+<label for="4">Yes</label><br>
+
+    <input type="radio" name="choice" class="radio" id="5" value="No">
+    <label for="5">No</label>
+    <div id="dis">
+        Discuss what drives your passion for codding and outline your aspirants in the<br>field <br>
+        <label for="text"></label>
+        <textarea id="text"></textarea>
+        <div>
+            what are some of the challenges you face while coding?<br>
+        <label for="ch"></label>
+            <textarea id="ch" ></textarea>
+
+            <div>
+                Please list the Daa structures yo have a strong understanding<br>
+
+            <label for="list"></label>
+                <textarea id="list" ></textarea>
+        </div>
+        <button>Submit Form</button>
+    </div>
+        </div>
+                
+                </div>
+            </form>
+
+        
+        </div>
+    
+
+</body>
+
+</html>
