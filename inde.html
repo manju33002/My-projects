@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="post">
+    <h1 class="heading">Payment Form</h1>
+    <hr>
+    <h2>User Information</h2>
+    <label for="name">Name</label>
+    <input type="text" name="fname" id="fname" placeholder="enter name">
+    <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male
+            <input type="radio" name="Gender" id="male" value="male">
+        </label>
+        <label for="female">Female</label>
+        <input type="radio" name="Gender" id="female" value="male">
+    </fieldset>
+    <hr>
+    Address
+    <textarea rows="8" cols="50" placeholder=""></textarea><br><br>
+    <address rows="20"colspan="30"></address>
+    <label for="email">Email</label>
+    <input type="email"placeholder="abc@gmail.com"><br><br>
+    <label for="pincode">Pincode</label>
+    <input type="number" name="pincode" id="pincode">
+    <h2> Payment Information</h2>
+    Card Type
+    <select> <option>--Select card type</option>
+        <Option value="card1">card1</Option>
+        <option value="card2">card2</option>
+    </select>
+    <br><br>
+    card number
+    <input type="number" name="num" id="num" placeholder="1111 2222 3333 4444">
+    <br><br>
+    Experies Date
+    <input type="date" name="date" id="date">
+    <br><br>
+    CVV
+<input type="text" placeholder="123">
+<br><br>
+<button>Pay Now</button>
+</form>
+</div>
+</body>
+</html>
